@@ -1,0 +1,1043 @@
+body {
+    background-attachment: fixed;
+    background-image: url(https://wallpapers.com/images/hd/books-on-shelf-art-zaza94g3cam53rd5.webp);
+}
+
+header{
+    background-color: rgba(240, 248, 255, 0.671);
+    padding: 25px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prin{
+    text-decoration: none;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:70px;
+}
+
+.sesion{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.carrusel{
+    background-color: rgba(0, 0, 0, 0.671);
+    padding-bottom: 60px;
+}
+-----------------------------------------N°1-------------------------------------------------
+#slider {
+    text-align: center;
+    padding-bottom:100px;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1 {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231014/pngtree-textured-backdrop-with-dark-green-leaf-pattern-image_13676664.png);
+}
+
+#overflow .slide_2 {
+    background-image: url(https://w0.peakpx.com/wallpaper/376/665/HD-wallpaper-dark-wall.jpg);
+}
+
+#overflow .slide_3 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1681558402429-9427dadca430?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjBhcmVuYXxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+#overflow .slide_4 {
+    background-image: url(https://images.unsplash.com/photo-1484387436194-cf7cb70800ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1),
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1),
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+-------------------------------------------------N°aventura----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-0:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-0:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-0:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-0:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-0 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/1fc1bf93-5096-4d26-a685-d28847222882/d_295_510/portada_todos-sabran-mi-nombre_tony-gratacos_202402161135.webp);
+}
+
+#overflow .slide_2-0 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/2fc3cc3e-0bf8-484c-9bb5-daaebacd43f8/d_295_510/portada_capitanes-intrepidos_rudyard-kipling_201811271710.webp);
+}
+
+#overflow .slide_3-0 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/3378a9c7-0b73-4f43-9746-4ac244d9dccb/d_295_510/portada_los-tres-mosqueteros_alexandre-dumas_202310231114.webp);
+}
+
+#overflow .slide_4-0 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6cef7440-1058-4ee8-9def-643cfa471444/d_295_510/portada_las-aventuras-de-huckleberry-finn_mark-twain_201711281506.webp);
+}
+
+#slide1-0:checked ~ #controls label:nth-child(2),
+#slide2-0:checked ~ #controls label:nth-child(3),
+#slide3-0:checked ~ #controls label:nth-child(4),
+#slide4-0:checked ~ #controls label:nth-child(1),
+
+#slide1-0:checked ~ #controls label:nth-child(2),
+#slide2-0:checked ~ #controls label:nth-child(3),
+#slide3-0:checked ~ #controls label:nth-child(4),
+#slide4-0:checked ~ #controls label:nth-child(1),
+
+#slide1-0:checked ~ #bullets label:nth-child(1),
+#slide2-0:checked ~ #bullets label:nth-child(2),
+#slide3-0:checked ~ #bullets label:nth-child(3),
+#slide4-0:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-0:checked ~ #controls label:nth-child(2),
+    #slide2-0:checked ~ #controls label:nth-child(3),
+    #slide3-0:checked ~ #controls label:nth-child(4),
+    #slide4-0:checked ~ #controls label:nth-child(1),
+    #slide1-0:checked ~ #controls label:nth-last-child(2),
+    #slide2-0:checked ~ #controls label:nth-last-child(3),
+    #slide3-0:checked ~ #controls label:nth-last-child(4),
+    #slide4-0:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+-------------------------------------------------N°CF----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-1:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-1:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-1:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-1:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-1 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/3c1ccfa1-8ba5-4059-8c0d-520e73c5e5e9/d_295_510/portada_takarabune_sabino-cabeza-abuin_202309211049.webp);
+}
+
+#overflow .slide_2-1 {
+    background-image: url(https://cdnx.jumpseller.com/queleoconce/image/8208743/resize/520/520?1586547317);
+}
+
+#overflow .slide_3-1 {
+    background-image: url(https://cdnx.jumpseller.com/queleoconce/image/51840910/resize/540/540?1724355213);
+}
+
+#overflow .slide_4-1 {
+    background-image: url(https://cdnx.jumpseller.com/queleoconce/image/8204556/resize/520/520?1586494653);
+}
+
+#slide1-1:checked ~ #controls label:nth-child(2),
+#slide2-1:checked ~ #controls label:nth-child(3),
+#slide3-1:checked ~ #controls label:nth-child(4),
+#slide4-1:checked ~ #controls label:nth-child(1),
+
+#slide1-1:checked ~ #controls label:nth-child(2),
+#slide2-1:checked ~ #controls label:nth-child(3),
+#slide3-1:checked ~ #controls label:nth-child(4),
+#slide4-1:checked ~ #controls label:nth-child(1),
+
+#slide1-1:checked ~ #bullets label:nth-child(1),
+#slide2-1:checked ~ #bullets label:nth-child(2),
+#slide3-1:checked ~ #bullets label:nth-child(3),
+#slide4-1:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-1:checked ~ #controls label:nth-child(2),
+    #slide2-1:checked ~ #controls label:nth-child(3),
+    #slide3-1:checked ~ #controls label:nth-child(4),
+    #slide4-1:checked ~ #controls label:nth-child(1),
+    #slide1-1:checked ~ #controls label:nth-last-child(2),
+    #slide2-1:checked ~ #controls label:nth-last-child(3),
+    #slide3-1:checked ~ #controls label:nth-last-child(4),
+    #slide4-1:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Misterio----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-2:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-2:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-2:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-2:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-2 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/0f9d4bea-4782-4550-b7dd-47e46df780a2/d_295_510/portada_el-esplendor_agustin-martinez_202412191248.webp);
+}
+
+#overflow .slide_2-2 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/56751fe9-0ad5-4548-bce6-8217979ade8e/d_295_510/portada_lo-que-habita-en-los-suenos_nagore-suarez_202412201326.webp);
+}
+
+#overflow .slide_3-2 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/138cb723-2741-426f-8b6b-2c94e4abae35/d_295_510/portada_la-herencia_helene-flood_202412031106.webp);
+}
+
+#overflow .slide_4-2 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/26ad7163-398d-44fe-ba53-8865e6c37aa9/d_295_510/portada_el-grito_milo-krmpotic_202412111116.webp);
+}
+
+#slide1-2:checked ~ #controls label:nth-child(2),
+#slide2-2:checked ~ #controls label:nth-child(3),
+#slide3-2:checked ~ #controls label:nth-child(4),
+#slide4-2:checked ~ #controls label:nth-child(1),
+
+#slide1-2:checked ~ #controls label:nth-child(2),
+#slide2-2:checked ~ #controls label:nth-child(3),
+#slide3-2:checked ~ #controls label:nth-child(4),
+#slide4-2:checked ~ #controls label:nth-child(1),
+
+#slide1-2:checked ~ #bullets label:nth-child(1),
+#slide2-2:checked ~ #bullets label:nth-child(2),
+#slide3-2:checked ~ #bullets label:nth-child(3),
+#slide4-2:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-2:checked ~ #controls label:nth-child(2),
+    #slide2-2:checked ~ #controls label:nth-child(3),
+    #slide3-2:checked ~ #controls label:nth-child(4),
+    #slide4-2:checked ~ #controls label:nth-child(1),
+    #slide1-2:checked ~ #controls label:nth-last-child(2),
+    #slide2-2:checked ~ #controls label:nth-last-child(3),
+    #slide3-2:checked ~ #controls label:nth-last-child(4),
+    #slide4-2:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Terror----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-3:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-3:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-3:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-3:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-3 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/9bbea58b-55a2-48ba-ac2a-7b401d3b9c97/d_295_510/portada_paperbacks-from-hell_grady-hendrix_202408091145.webp);
+}
+
+#overflow .slide_2-3 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/db010d9d-d35d-48fc-8a1d-6db864a972c0/d_295_510/portada_ahi-fuera-gritando_jordan-peele_202408091125.webp);
+}
+
+#overflow .slide_3-3 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/e779f261-656f-42b1-833f-7329c47fdd01/d_295_510/portada_la-materia-de-las-sombras_antonio-runa_202402271304.webp);
+}
+
+#overflow .slide_4-3 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/f8ad3344-a444-4f37-afe0-8ccdf7e9a6d2/d_295_510/portada_la-sombra-sobre-innsmouth_h-p-lovecraft_202310311551.webp);
+}
+
+#slide1-3:checked ~ #controls label:nth-child(2),
+#slide2-3:checked ~ #controls label:nth-child(3),
+#slide3-3:checked ~ #controls label:nth-child(4),
+#slide4-3:checked ~ #controls label:nth-child(1),
+
+#slide1-3:checked ~ #controls label:nth-child(2),
+#slide2-3:checked ~ #controls label:nth-child(3),
+#slide3-3:checked ~ #controls label:nth-child(4),
+#slide4-3:checked ~ #controls label:nth-child(1),
+
+#slide1-3:checked ~ #bullets label:nth-child(1),
+#slide2-3:checked ~ #bullets label:nth-child(2),
+#slide3-3:checked ~ #bullets label:nth-child(3),
+#slide4-3:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-3:checked ~ #controls label:nth-child(2),
+    #slide2-3:checked ~ #controls label:nth-child(3),
+    #slide3-3:checked ~ #controls label:nth-child(4),
+    #slide4-3:checked ~ #controls label:nth-child(1),
+    #slide1-3:checked ~ #controls label:nth-last-child(2),
+    #slide2-3:checked ~ #controls label:nth-last-child(3),
+    #slide3-3:checked ~ #controls label:nth-last-child(4),
+    #slide4-3:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Romance----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-4:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-4:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-4:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-4:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-4 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/4b44f47a-640f-4146-9bba-b0c97ac54dbf/d_295_510/portada_anatomia-del-amor-serie-hospital-whitestone-1_ava-reed_202310231118.webp);
+}
+
+#overflow .slide_2-4 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/e1712b24-633d-4483-85c9-0e3b30a652df/d_295_510/portada_el-arte-de-ser-nosotros_inma-rubiales_202212231040.webp);
+}
+
+#overflow .slide_3-4 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/e2e83fe6-8290-4ca5-a59e-60a62e5e8c38/d_295_510/portada_todo-el-tiempo-que-nos-queda_irene-junquera_202310231112.webp);
+}
+
+#overflow .slide_4-4 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/729d7a30-ffda-4234-b058-1ac781108b7a/d_295_510/portada_donde-todo-brilla_alice-kellen_202310231102.webp);
+}
+
+#slide1-4:checked ~ #controls label:nth-child(2),
+#slide2-4:checked ~ #controls label:nth-child(3),
+#slide3-4:checked ~ #controls label:nth-child(4),
+#slide4-4:checked ~ #controls label:nth-child(1),
+
+#slide1-4:checked ~ #controls label:nth-child(2),
+#slide2-4:checked ~ #controls label:nth-child(3),
+#slide3-4:checked ~ #controls label:nth-child(4),
+#slide4-4:checked ~ #controls label:nth-child(1),
+
+#slide1-4:checked ~ #bullets label:nth-child(1),
+#slide2-4:checked ~ #bullets label:nth-child(2),
+#slide3-4:checked ~ #bullets label:nth-child(3),
+#slide4-4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-4:checked ~ #controls label:nth-child(2),
+    #slide2-4:checked ~ #controls label:nth-child(3),
+    #slide3-4:checked ~ #controls label:nth-child(4),
+    #slide4-4:checked ~ #controls label:nth-child(1),
+    #slide1-4:checked ~ #controls label:nth-last-child(2),
+    #slide2-4:checked ~ #controls label:nth-last-child(3),
+    #slide3-4:checked ~ #controls label:nth-last-child(4),
+    #slide4-4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Humor----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-5:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-5:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-5:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-5:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-5 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/bbe5bde2-5334-4440-b03d-bf83db08bb2b/d_295_510/portada_el-descontento_beatriz-serrano_202308311542.webp);
+}
+
+#overflow .slide_2-5 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/43445dfc-0d64-475a-aa70-d5b191d89c2a/d_295_510/portada_cuanta-mas-gente-se-muere-mas-ganas-de-vivir-tengo_maruja-torres_202407190815.webp);
+}
+
+#overflow .slide_3-5 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/c9ff0957-5821-4d2e-8af0-f30a67c99a0a/d_295_510/portada_frankie_maxim-leo-jm-gutsch_202408051216.webp);
+}
+
+#overflow .slide_4-5 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/094a9856-90dc-4cd2-8b63-3aada148eae7/d_295_510/portada_querido-cerebro-que-cono-quieres-de-mi_lorena-gascon-lapsicologajaputa_202212261142.webp);
+}
+
+#slide1-5:checked ~ #controls label:nth-child(2),
+#slide2-5:checked ~ #controls label:nth-child(3),
+#slide3-5:checked ~ #controls label:nth-child(4),
+#slide4-5:checked ~ #controls label:nth-child(1),
+
+#slide1-5:checked ~ #controls label:nth-child(2),
+#slide2-5:checked ~ #controls label:nth-child(3),
+#slide3-5:checked ~ #controls label:nth-child(4),
+#slide4-5:checked ~ #controls label:nth-child(1),
+
+#slide1-5:checked ~ #bullets label:nth-child(1),
+#slide2-5:checked ~ #bullets label:nth-child(2),
+#slide3-5:checked ~ #bullets label:nth-child(3),
+#slide4-5:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-5:checked ~ #controls label:nth-child(2),
+    #slide2-5:checked ~ #controls label:nth-child(3),
+    #slide3-5:checked ~ #controls label:nth-child(4),
+    #slide4-5:checked ~ #controls label:nth-child(1),
+    #slide1-5:checked ~ #controls label:nth-last-child(2),
+    #slide2-5:checked ~ #controls label:nth-last-child(3),
+    #slide3-5:checked ~ #controls label:nth-last-child(4),
+    #slide4-5:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Humor----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-6:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-6:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-6:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-6:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-6 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/671d49d8-c001-43b3-92ef-48cdb3f4e2bd/d_295_510/portada_poesia-completa_ernesto-cardenal_202412101339.webp);
+}
+
+#overflow .slide_2-6 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/a3d852bd-c3e4-4ea4-9f6e-41f02405a054/d_295_510/portada_conversaciones-con-un-monje-de-madera_nino-de-elche_202410101027.webp);
+}
+
+#overflow .slide_3-6 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/ca0e2a29-edcb-4bb6-820f-c366a01637f7/d_295_510/portada_la-ataraxia-del-corazon_sara-buho_202410021210.webp);
+}
+
+#overflow .slide_4-6 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/9b9df315-095b-4458-bfc8-8ee9fda4802b/d_295_510/portada_pequena-historia-de-la-mitologia-clasica_emilio-del-rio_202310091133.webp);
+}
+
+#slide1-6:checked ~ #controls label:nth-child(2),
+#slide2-6:checked ~ #controls label:nth-child(3),
+#slide3-6:checked ~ #controls label:nth-child(4),
+#slide4-6:checked ~ #controls label:nth-child(1),
+
+#slide1-6:checked ~ #controls label:nth-child(2),
+#slide2-6:checked ~ #controls label:nth-child(3),
+#slide3-6:checked ~ #controls label:nth-child(4),
+#slide4-6:checked ~ #controls label:nth-child(1),
+
+#slide1-6:checked ~ #bullets label:nth-child(1),
+#slide2-6:checked ~ #bullets label:nth-child(2),
+#slide3-6:checked ~ #bullets label:nth-child(3),
+#slide4-6:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-6:checked ~ #controls label:nth-child(2),
+    #slide2-6:checked ~ #controls label:nth-child(3),
+    #slide3-6:checked ~ #controls label:nth-child(4),
+    #slide4-6:checked ~ #controls label:nth-child(1),
+    #slide1-6:checked ~ #controls label:nth-last-child(2),
+    #slide2-6:checked ~ #controls label:nth-last-child(3),
+    #slide3-6:checked ~ #controls label:nth-last-child(4),
+    #slide4-6:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Mitologia----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-7:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-7:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-7:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-7:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-7 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/30a35558-12ad-496f-8b69-a55b51f235ca/d_295_510/portada___202104271117.webp);
+}
+
+#overflow .slide_2-7 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/70d55531-e5f6-4246-9ce6-cb06285b2826/d_295_510/48331_1_Grimal_diccionario300.webp);
+}
+
+#overflow .slide_3-7 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/03e20095-3cd5-44ea-8a79-a231ee9c3785/d_295_510/portada_mitologia_edith-hamilton_202011011248.webp);
+}
+
+#overflow .slide_4-7 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/9b9df315-095b-4458-bfc8-8ee9fda4802b/d_295_510/portada_pequena-historia-de-la-mitologia-clasica_emilio-del-rio_202310091133.webp);
+}
+
+#slide1-7:checked ~ #controls label:nth-child(2),
+#slide2-7:checked ~ #controls label:nth-child(3),
+#slide3-7:checked ~ #controls label:nth-child(4),
+#slide4-7:checked ~ #controls label:nth-child(1),
+
+#slide1-7:checked ~ #controls label:nth-child(2),
+#slide2-7:checked ~ #controls label:nth-child(3),
+#slide3-7:checked ~ #controls label:nth-child(4),
+#slide4-7:checked ~ #controls label:nth-child(1),
+
+#slide1-7:checked ~ #bullets label:nth-child(1),
+#slide2-7:checked ~ #bullets label:nth-child(2),
+#slide3-7:checked ~ #bullets label:nth-child(3),
+#slide4-7:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-7:checked ~ #controls label:nth-child(2),
+    #slide2-7:checked ~ #controls label:nth-child(3),
+    #slide3-7:checked ~ #controls label:nth-child(4),
+    #slide4-7:checked ~ #controls label:nth-child(1),
+    #slide1-7:checked ~ #controls label:nth-last-child(2),
+    #slide2-7:checked ~ #controls label:nth-last-child(3),
+    #slide3-7:checked ~ #controls label:nth-last-child(4),
+    #slide4-7:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+------------------------------------------------N°Cuentos----------------------------------------------------
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1-8:checked ~ #overflow .inner {
+    margin-left: 0;
+}
+
+#slide2-8:checked ~ #overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3-8:checked ~ #overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4-8:checked ~ #overflow .inner {
+    margin-left: -300%;
+}
+
+#overflow .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+
+#overflow .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#overflow .slide_1-8 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6496541e-4c24-47ad-a953-b2e6a24e4e57/d_295_510/portada___202408071251.webp);
+}
+
+#overflow .slide_2-8 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6a54cdcd-ce20-4be7-bd5d-5b8e0997a784/d_295_510/2980_1_poe.webp);
+}
+
+#overflow .slide_3-8 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/54a32be6-db40-48b8-b1e2-f32be42706aa/d_295_510/portada_cuentos-para-leer-con-papa_celine-santini_202311061426.webp);
+}
+
+#overflow .slide_4-8 {
+    background-image: url(https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/b99126b6-4aa7-4fd6-a253-998b522f98bc/d_295_510/415924_portada_los-cuentos-de-don-manuel_felipe-pigna_202501122250.webp);
+}
+
+#slide1-6-8:checked ~ #controls label:nth-child(2),
+#slide2-6-8:checked ~ #controls label:nth-child(3),
+#slide3-6-8:checked ~ #controls label:nth-child(4),
+#slide4-6-8:checked ~ #controls label:nth-child(1),
+
+#slide1-6-8:checked ~ #controls label:nth-child(2),
+#slide2-6-8:checked ~ #controls label:nth-child(3),
+#slide3-6-8:checked ~ #controls label:nth-child(4),
+#slide4-6-8:checked ~ #controls label:nth-child(1),
+
+#slide1-6-8:checked ~ #bullets label:nth-child(1),
+#slide2-6-8:checked ~ #bullets label:nth-child(2),
+#slide3-6-8:checked ~ #bullets label:nth-child(3),
+#slide4-6-8:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1-6-8:checked ~ #controls label:nth-child(2),
+    #slide2-6-8:checked ~ #controls label:nth-child(3),
+    #slide3-6-8:checked ~ #controls label:nth-child(4),
+    #slide4-6-8:checked ~ #controls label:nth-child(1),
+    #slide1-6-8:checked ~ #controls label:nth-last-child(2),
+    #slide2-6-8:checked ~ #controls label:nth-last-child(3),
+    #slide3-6-8:checked ~ #controls label:nth-last-child(4),
+    #slide4-6-8:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+    }
+    #overflow {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+h1{
+    color: aliceblue;
+    font-size: 100px;
+    text-align: left;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+}
+
+.arena{
+    color: rgb(93, 2, 2);
+    text-align: center;
+}
+
+p{
+    text-align:center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.contenido{
+    background-color: rgba(7, 43, 75, 0.671);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contexto{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.context{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.fondito{
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.comentarios{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(240, 248, 255, 0.671);
+}
+
+footer{
+    background-color: rgba(240, 248, 255, 0.671);
+    padding: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.textof{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+span{
+    color: crimson;
+}
+
+.ind{
+    text-align: end;
+}

@@ -1,0 +1,103 @@
+body {
+    background-attachment: fixed;
+    background-image: url(https://wallpapers.com/images/hd/books-on-shelf-art-zaza94g3cam53rd5.webp);
+}
+
+.formuR{
+    background-color: rgba(7, 43, 75, 0.671);
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.regis{
+    margin-bottom: 50px;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 70px;
+}
+
+.mb-3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-label{
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.terminos{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.condiciones{
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: start;
+}
+
+h3{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.mb-3-form-check{
+    text-align: center;
+}
+
+.form-check-label{
+    font-size: 15px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.botones{
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+}
+
+#boton{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: rgb(30, 117, 246);
+    pointer-events: none;
+    user-select: none;
+    opacity: 70%;
+}
+
+.recorda{
+    margin-top: 30px;
+}
+
+.sesion{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.feedback{
+    display: none;
+    color: rgb(228, 232, 14);
+    padding-top: 10px;
+}
+
+
