@@ -17,7 +17,9 @@ signupForm.addEventListener('submit', (e)=>{
     const password = document.querySelector('#password').value
 
     const Users = JSON.parse(localStorage.getItem('users')) || []
+    const Usere = JSON.parse(localStorage.getItem('usere')) || []
     const isUserRegistered = Users.find(user => user.email === email)
+    const isUserRegister = Usere.find(usera => usera.password === password)
 
     if(email === "" || password === ""){
     alert("Ingresa tus Datos para Continuar.")
@@ -29,8 +31,10 @@ signupForm.addEventListener('submit', (e)=>{
             feedback3.style.display='none'
         }
         else{
-            Users.push({name: name, email: email, password: password})
+            Users.push({email: email})
+            Usere.push({password: password})
             localStorage.setItem('users', JSON.stringify(Users))
+            localStorage.setItem('usere', JSON.stringify(Usere))
             alert('Registro Exitoso!')
             window.location.href = 'Principal.html'
             feedback1.style.display='none'
@@ -44,20 +48,18 @@ signupForm.addEventListener('submit', (e)=>{
     }else{
         feedback1.style.display='none'
     }
-
     if(email === ""){
         feedback2.style.display='block'
     }else{
         feedback2.style.display='none'
     }
-
     if(password === ""){
         feedback3.style.display='block'
     }else{
         feedback3.style.display='none'
     }
-
 })
+
 
 checkbox.addEventListener('click', function(){
     if(checkbox.checked){
